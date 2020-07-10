@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<header>
+    <br>
+    <div class="heading">StopWatch</div><br>
+</header>
+
+<body>
+    <div class="watch">
+        <table class="clrs">
+            <tr class="values">
+                <th class="value" id="hrs">00
+                </th>
+                <th class="value" id="mins">00
+                </th>
+                <th class="value" id="secs">00
+                </th>
+                <div class="colon">:</div>
+                <th class="value" id="msecs">00
+                </th>
+            </tr>
+            <tr class="values">
+                <td class="value cls">hr</td>
+                <td class="value cls">min</td>
+                <td class="value cls">sec</td>
+                <td class="value cls">msec</td>
+            </tr>
+    </div>
+    </table>
+    <br>
+    <div class="buttons">
+        <button type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+        <button type="button" class="btn btn-success" id="disable" onclick="disable(),start()">Start</button>
+        <button type="button" class="btn btn-danger" id="disable" onclick="enable(),stop()">Stop</button>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
